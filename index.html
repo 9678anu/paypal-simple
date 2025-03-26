@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Transaction Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            /*
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd; */
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 100px;
+            max-width: 100%;
+        }
+
+        .content p {
+            font-size: 12px;
+            color: #333;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .content a {
+            color: #0070ba;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .transaction-details {
+            margin: 20px 0;
+        }
+
+        .transaction-details p {
+            font-size: 12px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .transaction-table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        .transaction-table th, .transaction-table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .transaction-table th {
+            background-color: #0070ba;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .transaction-table td {
+            font-size: 12px;
+            color: #333;
+        }
+
+        .summary p {
+            font-size: 12px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .payment-method {
+            margin: 20px 0;
+        }
+
+        .payment-method h2 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .payment-method img {
+            width: 150px;
+            max-width: 100%;
+        }
+
+        .contact-section {
+            margin: 20px 0;
+        }
+
+        .contact-section p {
+            font-size: 12px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .contact-section a {
+            color: #0070ba;
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+        .contact-button {
+            display: inline-block;
+            background-color: #000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .contact-button:hover {
+            background-color: #000;
+        }
+
+        .footer {
+            text-align: right;
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+         .phone a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a {
+            color: #0070ba;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            .header img {
+                width: 80px;
+            }
+
+            .transaction-table th, .transaction-table td {
+                padding: 8px;
+                font-size: 13px;
+            }
+
+            .payment-method img {
+                width: 120px;
+            }
+
+            .contact-button {
+                padding: 8px 15px;
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .header img {
+                width: 60px;
+            }
+
+            .content p, .transaction-details p, .summary p, .contact-section p {
+                font-size: 12px;
+            }
+
+            .transaction-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .transaction-table th, .transaction-table td {
+                padding: 6px;
+                font-size: 11px;
+            }
+
+            .payment-method img {
+                width: 100px;
+            }
+
+            .contact-button {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .footer {
+                font-size: 10px;
+                float: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://1000logos.net/wp-content/uploads/2017/05/Paypal-Logo-2022.png" alt="PayPal Logo">
+        </div>
+
+        <div class="content">
+            <p>Thank you for choosing us, your trust means everything to us!</p>
+            <p>This transaction will appear as a pending transaction until Pay_Pal protection service processes your bid.</p>
+            <p>To obtain the full transaction details, log in to your Pay_Pal account. kindly remember, this transaction may take up to 24 hours to appear in your account statement.
+            </p>
+            <p>For more information, contact_us at <a href="tel:+1-(808)489-2257">+1-(808)489-2257</a></p>
+        </div>
+
+        <div class="transaction-details">
+            <p><strong>Transaction ID:</strong> 8793NHD977GBE</p>
+            <table class="transaction-table">
+                <tr>
+                    <th>No</th>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bitcoin Transaction</td>
+                    <td>1</td>
+                    <td>$ 499.99</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="summary">
+            <p><strong>Sub-Total:</strong> $ 499.99</p>
+            <p><strong>Tax:</strong> Not Yet Included</p>
+            <p><strong>Total:</strong> $ 499.99</p>
+        </div>
+
+        <div class="payment-method">
+            <h2>Payment Method</h2>
+            <img src="https://cdn.shopify.com/s/files/1/0759/2768/3369/files/20240722113146_480x480.jpg?v=1721619137" alt="Payment Methods">
+            <p>You authorized a payment of $ 499.99 USD to Pay_Pal SQUAD protection service.</p>
+        </div>
+
+        <div class="contact-section">
+            <p>Questions? Call_us to end your membership and obtain your Refund_request:
+            </p>
+            <p><a href="tel:+1-(808)489-2257">+1-(808)489-2257</a></p>
+        </div>
+
+        <div class="footer">
+            <a href="tel:+1-(808)489-2257" class="contact-button"> <span style="color: #fff;">Contact-Us: +1-(808)489-2257</span></a>
+            <p><a href="#">Help & Contact</a> | <a href="#">Security</a> | <a href="#">Apps</a></p>
+        </div>
+    </div>
+</body>
+</html>
